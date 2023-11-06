@@ -1,0 +1,14 @@
+.css-grid {
+  @apply grid gap-2.5;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  div {
+    @apply flex items-center justify-center text-3xl;
+    &:nth-child(odd) {
+      @apply bg-blue-200;
+    }
+    &:nth-child(even) {
+      @apply bg-orange-200;
+    }
+  }
+}
