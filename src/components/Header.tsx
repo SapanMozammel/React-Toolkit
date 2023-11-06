@@ -1,9 +1,13 @@
-interface TitleProps {
+interface HeaderProps {
   title: string;
   children?: React.ReactNode; // 👈️ for demo purposes
 }
-const Title = (props: TitleProps) => {
-  return <div className="w-10/12 mx-auto flex justify-center items-center py-12 text-5xl font-bold">{props?.title}</div>;
+const Header = (props: HeaderProps) => {
+  return (
+    <div className="w-10/12 mx-auto flex justify-center items-center py-12 text-5xl font-bold">
+      {props?.title}
+    </div>
+  );
 };
 
-export default Title;
+export default Header;

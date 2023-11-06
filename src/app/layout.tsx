@@ -21,7 +21,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-gradient-to-tr from-green-100 to-red-100`}>
         <main className="flex min-h-screen flex-col">
-          <Header title="Css Grid Auto Layout" />
+          <Header title="Title Here" />
           <div className="w-10/12 grow mx-auto flex flex-col justify-center">
             {children}
           </div>
