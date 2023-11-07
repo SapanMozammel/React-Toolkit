@@ -1,0 +1,16 @@
+.masonry-container {
+  @apply w-full relative;
+}
+
+.card {
+  @apply flex flex-col break-inside-avoid-column mb-5;
+  .card-title {
+    @apply px-5 py-2 bg-gray-600 text-white rounded-t-lg inline-flex gap-[1ch] items-center;
+    .count {
+      @apply h-6 w-6 shrink-0 rounded-full bg-red-400 inline-flex items-center justify-center text-xs;
+    }
+  }
+  .card-body {
+    @apply p-5 bg-gray-50 rounded-b-lg;
+  }
+}
